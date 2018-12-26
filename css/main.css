@@ -1,2 +1,86 @@
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  height: 100%;
+  display: grid;
+  /*    I need this for the desktop view*/
+  grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 3fr [col-2-end];
+  grid-template-rows: 1.5rem 4.5rem auto 4.5rem;
+  grid-template-areas: "dr dr" "hd hd " "sd main" "ft ft";
+  grid-gap: 5px;
+  background-image: url(../img/cacti.jpg); }
+
+.dr {
+  display: grid;
+  grid-area: dr;
+  justify-items: end;
+  background-color: lightpink; }
+  .dr .sub-dr {
+    display: grid;
+    grid-template-areas: "dr1 dr2 dr3";
+    grid-template-columns: autos; }
+    .dr .sub-dr .dr1 {
+      grid-area: dr1;
+      font-size: .8rem; }
+    .dr .sub-dr .dr2 {
+      grid-area: dr2;
+      font-size: .8rem; }
+    .dr .sub-dr .dr3 {
+      grid-area: dr3;
+      font-size: .8rem; }
+    .dr .sub-dr .dr1 a, .dr .sub-dr .dr2 a, .dr .sub-dr .dr3 a {
+      text-decoration: none;
+      font-weight: 800;
+      color: #000; }
+
+header {
+  background-color: rgba(152, 251, 152, 0.4);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "menu1 menu2";
+  grid-area: hd; }
+
+.menu1 {
+  list-style: none;
+  padding: 10px;
+  text-align: right;
+  grid-area: menu1; }
+
+.menu2 {
+  list-style: none;
+  padding: 10px;
+  text-align: left;
+  grid-area: menu2; }
+
+.header-menu1,
+.header-menu2 {
+  text-decoration: none;
+  font-size: 2rem; }
+
+aside {
+  background-color: rgba(175, 238, 238, 0.4);
+  grid-area: sd; }
+
+main {
+  background-color: rgba(221, 160, 221, 0.4);
+  grid-area: main; }
+
+footer {
+  background-color: rgba(255, 239, 213, 0.4); }
+
+@media (max-width: 40rem) {
+  body {
+    grid-template-rows: 1.5rem 4.5rem 4rem auto 4.5rem;
+    grid-template-areas: "dr dr" "hd hd" "sd sd" "main main" "ft ft"; }
+
+  .dr {
+    justify-items: center; }
+
+  .sub-dr li {
+    list-style: none;
+    padding: 10px;
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
