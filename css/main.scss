@@ -1,3 +1,5 @@
+@import " _variables.scss"; 
+
 html{
     height: 100%; 
     
@@ -8,15 +10,15 @@ body{
     height: 100%;
     display: grid;
 /*    I need this for the desktop view*/
-    grid-template-columns: [col-1-start]1fr[col-1-end col-2-start]  3fr [col-2-end]; 
-    grid-template-rows: 1.5rem 4.5rem auto 4.5rem;
-    grid-template-areas:  "dr dr"
+    grid:{
+        template-columns: [col-1-start]1fr[col-1-end col-2-start]  3fr [col-2-end]; 
+        template-rows: 1.5rem 4.5rem auto 4.5rem;
+        template-areas:  "dr dr"
                           "hd hd "
                           "sd main"
-                          "ft ft";  
- grid-gap: 5px;
-   
-    background-image: url(../img/cacti.jpg);
+                          "ft ft"; 
+        gap: 5px;
+    }
 }
 
 .dr{
@@ -27,21 +29,22 @@ body{
    
     .sub-dr{
     display: grid;
-    grid-template-areas: "dr1 dr2 dr3"; 
-    grid-template-columns:  autos; 
-  
+        grid:{
+            template-areas: "dr1 dr2 dr3";
+            template-columns:  autos; 
+        }
       .dr1{
     grid-area:dr1; 
-    font-size: .8rem;
+    font-size: $fontsize-br;
 }
         .dr2{
     grid-area: dr2;
-      font-size: .8rem;
+      font-size: $fontsize-br;
 }
 
          .dr3{
     grid-area:dr3;
-      font-size: .8rem;
+      font-size: $fontsize-br;
 }
         
         .dr1 a, .dr2 a, .dr3 a{

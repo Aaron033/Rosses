@@ -9,8 +9,7 @@ body {
   grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 3fr [col-2-end];
   grid-template-rows: 1.5rem 4.5rem auto 4.5rem;
   grid-template-areas: "dr dr" "hd hd " "sd main" "ft ft";
-  grid-gap: 5px;
-  background-image: url(../img/cacti.jpg); }
+  grid-gap: 5px; }
 
 .dr {
   display: grid;
@@ -23,13 +22,13 @@ body {
     grid-template-columns: autos; }
     .dr .sub-dr .dr1 {
       grid-area: dr1;
-      font-size: .8rem; }
+      font-size: 0.8rem; }
     .dr .sub-dr .dr2 {
       grid-area: dr2;
-      font-size: .8rem; }
+      font-size: 0.8rem; }
     .dr .sub-dr .dr3 {
       grid-area: dr3;
-      font-size: .8rem; }
+      font-size: 0.8rem; }
     .dr .sub-dr .dr1 a, .dr .sub-dr .dr2 a, .dr .sub-dr .dr3 a {
       text-decoration: none;
       font-weight: 800;
