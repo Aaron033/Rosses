@@ -111,10 +111,12 @@ aside{
 .sub-aside {
         
     li{
+   
         list-style: map-get($padding-list-style, list-style);
           padding:map-get($padding-list-style, padding); 
         a{
            text-decoration: none; 
+            
         }
     }
 }
@@ -151,6 +153,7 @@ footer{
             padding: 0;
          a{
              font-size: 0.7rem;
+             
          }
         }
     }
@@ -169,7 +172,7 @@ footer{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
     
-
+justify-content: center;
 }
 }
 // **********************************************************
