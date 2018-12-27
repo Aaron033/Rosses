@@ -146,6 +146,21 @@ main{
             .img-container2{
                 grid-area: "img2"; 
             }
+            .img-container3{
+                grid-area:"img3"; 
+            }
+            .img-container4{
+                grid-area:"img4"; 
+            }
+            .img-container5{
+                grid-area:"img5"; 
+                
+            }
+            .img-container6{
+                grid:"img6"; 
+                
+            } 
+            
         }
       
    
@@ -207,6 +222,22 @@ left:15%;
     text-align: center;
     }
   //aside ******************************************
+    
+    main{
+        .container-flowers{
+            grid:{
+                template-columns: 1fr; 
+                template-areas: "img1"
+                                "img2"
+                                "img3"
+                                "img4"
+                                "img5"
+                                "img6"; 
+                
+            }
+        }
+    }
 }
+
 //****************************************************
 //Mobile responsibe code
