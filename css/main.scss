@@ -59,24 +59,25 @@ body{
 
 header{
     background-color: rgba(152, 251, 152, 0.4); 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-areas: "menu1 menu2"; 
-    grid-area: hd; 
-    
+    display: grid;
+    grid:{
+        template-columns: 1fr 1fr;
+        template-areas: "menu1 menu2";
+        area: hd; 
+    }   
 }
 
 .menu1{
-    list-style: none;
-    padding:10px; 
+  list-style: map-get($padding-list-style, list-style);
+    padding:map-get($padding-list-style, padding); 
     text-align:right;
     grid-area: menu1; 
 
 }
 
 .menu2{
-    list-style: none;
-    padding:10px; 
+    list-style: map-get($padding-list-style, list-style);
+    padding:map-get($padding-list-style, padding); 
     text-align:left;
        grid-area:menu2;
 
@@ -125,8 +126,8 @@ footer{
     
    
    .sub-dr li{
-    list-style: none;
-    padding:10px; 
+   list-style: map-get($padding-list-style, list-style);
+    padding:map-get($padding-list-style, padding); 
     text-align: center;
 
 }
