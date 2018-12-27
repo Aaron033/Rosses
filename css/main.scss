@@ -224,6 +224,10 @@ left:15%;
   //aside ******************************************
     
     main{
+        h1{
+            text-align: center;
+            font-size: 1.5rem;
+        }
         .container-flowers{
             grid:{
                 template-columns: 1fr; 
@@ -234,6 +238,10 @@ left:15%;
                                 "img5"
                                 "img6"; 
                 
+            }
+            width:300px;
+            img{
+                width:300px;
             }
         }
     }

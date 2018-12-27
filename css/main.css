@@ -130,8 +130,14 @@ footer {
     right: 20%;
     text-align: center; }
 
+  main h1 {
+    text-align: center;
+    font-size: 1.5rem; }
   main .container-flowers {
     grid-template-columns: 1fr;
-    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6"; } }
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
+    width: 300px; }
+    main .container-flowers img {
+      width: 300px; } }
 
 /*# sourceMappingURL=main.css.map */
