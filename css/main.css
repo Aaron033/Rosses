@@ -68,6 +68,12 @@ aside {
   background-color: rgba(175, 238, 238, 0.4);
   grid-area: sd; }
 
+.sub-aside li {
+  list-style: none;
+  padding: 10px; }
+  .sub-aside li a {
+    text-decoration: none; }
+
 main {
   background-color: rgba(221, 160, 221, 0.4);
   grid-area: main; }
@@ -82,15 +88,18 @@ footer {
 
   .dr {
     justify-items: center; }
-
-  li {
-    padding: 0; }
-    li a {
-      font-size: 0.7rem; }
+    .dr li {
+      padding: 0; }
+      .dr li a {
+        font-size: 0.7rem; }
 
   .sub-dr li {
     list-style: none;
     padding: 10px;
-    text-align: center; } }
+    text-align: center; }
+
+  .sub-aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; } }
 
 /*# sourceMappingURL=main.css.map */

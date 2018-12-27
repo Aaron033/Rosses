@@ -106,10 +106,18 @@ header{
 //aside code
 aside{
     background-color: rgba(175, 238, 238, 0.4); 
-    grid-area: sd; 
-    
+    grid-area: sd;  
 }
-
+.sub-aside {
+        
+    li{
+        list-style: map-get($padding-list-style, list-style);
+          padding:map-get($padding-list-style, padding); 
+        a{
+           text-decoration: none; 
+        }
+    }
+}
 // **********************************************************
 //main code
 main{
@@ -139,14 +147,14 @@ footer{
 }
     .dr{
         justify-items: center; 
-       
-    }
-     li{
+       li{
             padding: 0;
          a{
              font-size: 0.7rem;
          }
         }
+    }
+     
     
     
    
@@ -157,5 +165,12 @@ footer{
 
 }
     
+.sub-aside{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    
 
 }
+}
+// **********************************************************
+//Mobile responsibe code
