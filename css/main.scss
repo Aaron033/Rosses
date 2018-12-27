@@ -127,7 +127,9 @@ main{
     grid-area: main; 
     h1{
         margin: 10px;
+         }
         .container-flowers{
+            padding:10px;
             display: grid;
             
             grid:{
@@ -135,11 +137,18 @@ main{
                template-rows: auto auto;
                 template-areas: "img1 img2 img3 "
                                 "img4 img5 img6";
-                 
+                 gap: 5px;  
+            }
+            .img-container1{
+                grid-area: "img1;"; 
+            }
+            
+            .img-container2{
+                grid-area: "img2"; 
             }
         }
       
-    }
+   
 }
 // **********************************************************
 //footer code
@@ -199,5 +208,5 @@ left:15%;
     }
   //aside ******************************************
 }
-// **********************************************************
+//****************************************************
 //Mobile responsibe code
