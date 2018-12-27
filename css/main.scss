@@ -130,7 +130,7 @@ main{
 //footer code
 footer{
     background-color: rgba(255, 239, 213, 0.4); 
-
+grid-area: ft;
 
 }
 
@@ -145,11 +145,12 @@ footer{
                            "hd hd"
                            "sd sd"
                           "main main"
-                          "ft ft";   
+                           "ft ft";   
 }
     .dr{
-        justify-items: center; 
+        
        li{
+          
             padding: 0;
          a{
              font-size: 0.7rem;
@@ -171,9 +172,10 @@ footer{
 .sub-aside{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr;
+align-items: center;
     
-justify-content: center;
-}
+    }
+    
 }
 // **********************************************************
 //Mobile responsibe code

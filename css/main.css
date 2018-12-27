@@ -79,19 +79,18 @@ main {
   grid-area: main; }
 
 footer {
-  background-color: rgba(255, 239, 213, 0.4); }
+  background-color: rgba(255, 239, 213, 0.4);
+  grid-area: ft; }
 
 @media (max-width: 40rem) {
   body {
     grid-template-rows: 1.5rem 4.5rem 4rem auto 4.5rem;
     grid-template-areas: "dr dr" "hd hd" "sd sd" "main main" "ft ft"; }
 
-  .dr {
-    justify-items: center; }
-    .dr li {
-      padding: 0; }
-      .dr li a {
-        font-size: 0.7rem; }
+  .dr li {
+    padding: 0; }
+    .dr li a {
+      font-size: 0.7rem; }
 
   .sub-dr li {
     list-style: none;
@@ -101,6 +100,6 @@ footer {
   .sub-aside {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center; } }
+    align-items: center; } }
 
 /*# sourceMappingURL=main.css.map */
