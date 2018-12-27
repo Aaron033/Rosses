@@ -125,6 +125,10 @@ aside{
 main{
     background-color:rgba( 221, 160, 221, 0.4); 
     grid-area: main; 
+    h1{
+        margin: 10px;
+    
+    }
 }
 // **********************************************************
 //footer code
@@ -147,6 +151,7 @@ grid-area: ft;
                           "main main"
                            "ft ft";   
 }
+    //dr *************************************
     .dr{
         
        li{
@@ -158,9 +163,9 @@ grid-area: ft;
          }
         }
     }
-     
+   //dr *************************************  
     
-    
+//aside *************************************
    
    .sub-dr li{
    list-style: map-get($padding-list-style, list-style);
@@ -177,11 +182,11 @@ grid-area: ft;
     position: absolute;
     top: 14px;
     
-left:20%;
+left:15%;
     right:20%;
     text-align: center;
     }
-  
+  //aside ******************************************
 }
 // **********************************************************
 //Mobile responsibe code
