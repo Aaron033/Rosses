@@ -22,13 +22,19 @@ body {
     grid-template-columns: autos; }
     .dr .sub-dr .dr1 {
       grid-area: dr1;
-      font-size: 0.8rem; }
+      font-size: 0.8rem;
+      list-style: none;
+      padding: 5px; }
     .dr .sub-dr .dr2 {
       grid-area: dr2;
-      font-size: 0.8rem; }
+      font-size: 0.8rem;
+      list-style: none;
+      padding: 5px; }
     .dr .sub-dr .dr3 {
       grid-area: dr3;
-      font-size: 0.8rem; }
+      font-size: 0.8rem;
+      list-style: none;
+      padding: 5px; }
     .dr .sub-dr .dr1 a, .dr .sub-dr .dr2 a, .dr .sub-dr .dr3 a {
       text-decoration: none;
       font-weight: 800;
@@ -76,6 +82,11 @@ footer {
 
   .dr {
     justify-items: center; }
+
+  li {
+    padding: 0; }
+    li a {
+      font-size: 0.7rem; }
 
   .sub-dr li {
     list-style: none;

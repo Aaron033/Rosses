@@ -26,25 +26,33 @@ body{
   grid-area: dr;
    justify-items: end;
     background-color: lightpink; 
+    
    
     .sub-dr{
     display: grid;
         grid:{
             template-areas: "dr1 dr2 dr3";
             template-columns:  autos; 
+            
         }
       .dr1{
     grid-area:dr1; 
     font-size: $fontsize-br;
+    list-style: map-get($padding-list-style, list-style);
+          padding: $padding-drs-full;
 }
         .dr2{
     grid-area: dr2;
       font-size: $fontsize-br;
+              list-style: map-get($padding-list-style, list-style);
+                  padding: $padding-drs-full;
 }
 
          .dr3{
     grid-area:dr3;
       font-size: $fontsize-br;
+               list-style: map-get($padding-list-style, list-style);
+                   padding: $padding-drs-full;
 }
         
         .dr1 a, .dr2 a, .dr3 a{
@@ -117,12 +125,19 @@ footer{
                            "hd hd"
                            "sd sd"
                           "main main"
-                          
                           "ft ft";   
 }
     .dr{
         justify-items: center; 
+       
     }
+     li{
+            padding: 0;
+         a{
+             font-size: 0.7rem;
+         }
+        }
+    
     
    
    .sub-dr li{
