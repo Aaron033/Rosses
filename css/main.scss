@@ -229,6 +229,7 @@ left:15%;
             font-size: 1.5rem;
         }
         .container-flowers{
+            margin: 0 auto;
             grid:{
                 template-columns: 1fr; 
                 template-areas: "img1"

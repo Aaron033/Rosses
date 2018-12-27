@@ -134,6 +134,7 @@ footer {
     text-align: center;
     font-size: 1.5rem; }
   main .container-flowers {
+    margin: 0 auto;
     grid-template-columns: 1fr;
     grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
     width: 300px; }
