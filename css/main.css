@@ -97,9 +97,13 @@ footer {
     padding: 10px;
     text-align: center; }
 
+  aside {
+    position: relative; }
+
   .sub-aside {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center; } }
+    position: absolute;
+    top: 14px; } }
 
 /*# sourceMappingURL=main.css.map */
