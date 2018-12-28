@@ -92,8 +92,15 @@ header{
         template-areas: "menu1 menu2 menu3";
         area: hd; 
     }   
+     align-items: center;
+    position: relative;
 }
-
+.menu-ham{
+    display: none;
+    position: absolute;
+    vertical-align: middle;
+    left:10px;
+}
 .menu1{
 @include main-header-style();
     grid-area: menu1; 
@@ -298,12 +305,17 @@ grid-area: ft;
 // Header ************************
     header{
         
-        align-items: center;
+//        align-items: center;
         .header-menu1,
 .header-menu2,
         .header-menu3 {
             font-size:  1.5rem;
+            display: none;
         }
+        .menu-ham{
+            display: block;
+        }
+        
     }
 //aside *************************************
    
@@ -328,7 +340,7 @@ left:15%;
     right:20%;
 //    justify-items: center;
 //    align-items: center;
-
+text-align: center;
     }
   //aside ******************************************
     
