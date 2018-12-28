@@ -114,6 +114,9 @@ footer {
     footer .footer-main .footer1 {
       grid-area: ft1;
       text-align: center; }
+      footer .footer-main .footer1 img {
+        width: 20px;
+        height: 20px; }
     footer .footer-main .footer1 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
