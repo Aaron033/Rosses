@@ -11,14 +11,13 @@ body {
   /*    I need this for the desktop view*/
   grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 3fr [col-2-end];
   grid-template-rows: 1.5rem 4.5rem auto 4.5rem;
-  grid-template-areas: "dr dr" "hd hd " "sd main" "ft ft";
-  grid-gap: 2px; }
+  grid-template-areas: "dr dr" "hd hd " "sd main" "ft ft"; }
 
 .dr {
   display: grid;
   grid-area: dr;
   justify-items: end;
-  background-color: #7AAD3E; }
+  background-color: #94a8b0; }
   .dr .sub-dr {
     display: grid;
     grid-template-areas: "dr1 dr2 dr3";
@@ -44,7 +43,7 @@ body {
       color: #FFF; }
 
 header {
-  background-color: rgba(152, 251, 152, 0.4);
+  background-color: rgba(134, 178, 194, 0.4);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "menu1 menu2";
@@ -70,7 +69,7 @@ header {
   font-weight: 700; }
 
 aside {
-  background-color: #deeff7;
+  background-color: rgba(222, 239, 247, 0.6);
   grid-area: sd; }
 
 .sub-aside li {
@@ -80,7 +79,7 @@ aside {
     text-decoration: none; }
 
 main {
-  background-color: rgba(221, 160, 221, 0.4);
+  background-color: rgba(174, 198, 207, 0.5);
   grid-area: main; }
   main h1 {
     margin: 10px; }
@@ -110,10 +109,17 @@ main {
       box-shadow: 10px 10px 5px grey; }
 
 footer {
-  background-color: #24263B;
+  background-color: rgba(36, 38, 59, 0.8);
   grid-area: ft;
-  color: #7F93B3;
+  color: #fff;
   font-size: .8rem; }
+  @media (min-width: 41rem) {
+    footer {
+      padding-top: 10px; }
+      footer .footer1 {
+        padding-top: 8px; }
+        footer .footer1 .fhd {
+          padding-bottom: 6px; } }
   footer .footer-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -124,6 +130,10 @@ footer {
       footer .footer-main .footer1 img {
         width: 20px;
         height: 20px; }
+      footer .footer-main .footer1 .facebook-icon {
+        width: 20px;
+        height: 20px;
+        fill: white; }
     footer .footer-main .footer1 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);

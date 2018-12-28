@@ -1,6 +1,7 @@
 @import " _variables.scss"; 
 *{
     font-family: 'Roboto', sans-serif;
+
 }
 html{
     height: 100%; 
@@ -21,7 +22,7 @@ body{
                           "hd hd "
                           "sd main"
                           "ft ft"; 
-        gap: 2px;
+    
     }
 }
 // **********************************************************
@@ -30,7 +31,7 @@ body{
     display: grid; 
   grid-area: dr;
    justify-items: end;
-    background-color: #7AAD3E; 
+    background-color: rgb(148, 168, 176); 
     
    
     .sub-dr{
@@ -72,7 +73,7 @@ body{
 //Header code 
 
 header{
-    background-color: rgba(152, 251, 152, 0.4); 
+    background-color:rgba(134, 178, 194,0.4); 
     display: grid;
     grid:{
         template-columns: 1fr 1fr;
@@ -109,7 +110,7 @@ header{
 // **********************************************************
 //aside code
 aside{
-    background-color: rgb(222,239,247); 
+    background-color: rgba(222,239,247,0.6); 
     grid-area: sd;  
 }
 .sub-aside {
@@ -127,7 +128,7 @@ aside{
 // **********************************************************
 //main code
 main{
-    background-color:rgba( 221, 160, 221, 0.4); 
+    background-color:rgba(174,198,207, 0.5); 
     grid-area: main; 
     h1{
         
@@ -186,10 +187,19 @@ main{
 // **********************************************************
 //footer code
 footer{
-    background-color: #24263B; 
+    background-color:rgba(36, 38, 59,0.8); 
 grid-area: ft;
-    color:#7F93B3;
+    color:#fff;
     font-size: .8rem;
+    @media (min-width: 41rem){
+           padding-top:10px;
+        .footer1{
+            padding-top:8px;
+            .fhd{
+                padding-bottom: 6px;
+            }
+        }
+    }
     .footer-main{
         display: grid;
         grid:{
@@ -200,10 +210,17 @@ grid-area: ft;
         
         .footer1{
             grid-area:ft1;
+            
             text-align: center; 
             img{
+          
                 width:20px; 
                 height:20px;
+            }
+            .facebook-icon{
+                width:20px; 
+                height:20px;
+                fill: white;
             }
            
         }
@@ -218,9 +235,11 @@ grid-area: ft;
             
             .fhd{
                 grid-area: fhd; 
+                
             }
             .sm1{
                 grid-area: sm1; 
+
             }
             .sm2{
                 grid-area: sm2; 
@@ -320,6 +339,7 @@ left:15%;
     footer{
         .footer-main{
             display: grid; 
+         
             grid:{
                 template-columns: 1fr; 
                 template-areas:"ft1"
