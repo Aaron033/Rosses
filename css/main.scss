@@ -1,5 +1,7 @@
 @import " _variables.scss"; 
-
+*{
+    font-family: 'Roboto', sans-serif;
+}
 html{
     height: 100%; 
     
@@ -19,7 +21,7 @@ body{
                           "hd hd "
                           "sd main"
                           "ft ft"; 
-        gap: 5px;
+        gap: 2px;
     }
 }
 // **********************************************************
@@ -28,7 +30,7 @@ body{
     display: grid; 
   grid-area: dr;
    justify-items: end;
-    background-color: lightpink; 
+    background-color: #7AAD3E; 
     
    
     .sub-dr{
@@ -60,8 +62,8 @@ body{
         
         .dr1 a, .dr2 a, .dr3 a{
     text-decoration: none;
-       font-weight: 800; 
-    color:#000;
+       font-weight: 700; 
+    color:#FFF;
 }    
     }
 }
@@ -99,13 +101,15 @@ header{
 .header-menu2{
     text-decoration: none;
     font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 
 // **********************************************************
 //aside code
 aside{
-    background-color: rgba(175, 238, 238, 0.4); 
+    background-color: rgb(222,239,247); 
     grid-area: sd;  
 }
 .sub-aside {
@@ -182,8 +186,10 @@ main{
 // **********************************************************
 //footer code
 footer{
-    background-color: rgba(255, 239, 213, 0.4); 
+    background-color: #24263B; 
 grid-area: ft;
+    color:#7F93B3;
+    font-size: .8rem;
     .footer-main{
         display: grid;
         grid:{

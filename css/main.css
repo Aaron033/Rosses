@@ -1,3 +1,6 @@
+* {
+  font-family: 'Roboto', sans-serif; }
+
 html {
   height: 100%; }
 
@@ -9,13 +12,13 @@ body {
   grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 3fr [col-2-end];
   grid-template-rows: 1.5rem 4.5rem auto 4.5rem;
   grid-template-areas: "dr dr" "hd hd " "sd main" "ft ft";
-  grid-gap: 5px; }
+  grid-gap: 2px; }
 
 .dr {
   display: grid;
   grid-area: dr;
   justify-items: end;
-  background-color: lightpink; }
+  background-color: #7AAD3E; }
   .dr .sub-dr {
     display: grid;
     grid-template-areas: "dr1 dr2 dr3";
@@ -37,8 +40,8 @@ body {
       padding: 5px; }
     .dr .sub-dr .dr1 a, .dr .sub-dr .dr2 a, .dr .sub-dr .dr3 a {
       text-decoration: none;
-      font-weight: 800;
-      color: #000; }
+      font-weight: 700;
+      color: #FFF; }
 
 header {
   background-color: rgba(152, 251, 152, 0.4);
@@ -62,10 +65,12 @@ header {
 .header-menu1,
 .header-menu2 {
   text-decoration: none;
-  font-size: 2rem; }
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 aside {
-  background-color: rgba(175, 238, 238, 0.4);
+  background-color: #deeff7;
   grid-area: sd; }
 
 .sub-aside li {
@@ -105,8 +110,10 @@ main {
       box-shadow: 10px 10px 5px grey; }
 
 footer {
-  background-color: rgba(255, 239, 213, 0.4);
-  grid-area: ft; }
+  background-color: #24263B;
+  grid-area: ft;
+  color: #7F93B3;
+  font-size: .8rem; }
   footer .footer-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
