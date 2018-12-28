@@ -282,10 +282,12 @@ grid-area: ft;
 }
     //dr *************************************
     .dr{
-        
+        justify-items: center;
+      
        li{
           
             padding: 0;
+    
          a{
              font-size: 0.7rem;
              
@@ -295,6 +297,8 @@ grid-area: ft;
    //dr *************************************  
 // Header ************************
     header{
+        
+        align-items: center;
         .header-menu1,
 .header-menu2,
         .header-menu3 {
@@ -311,16 +315,20 @@ grid-area: ft;
 }
     aside{
         position: relative;
+  
+        
     }
 .sub-aside{
     display: grid; 
     grid-template-columns: repeat(3,1fr);
     position: absolute;
-    top: 14px;
+    top: 3px;
     
 left:15%;
     right:20%;
-    text-align: center;
+//    justify-items: center;
+//    align-items: center;
+
     }
   //aside ******************************************
     

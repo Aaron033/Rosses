@@ -173,15 +173,19 @@ footer {
     grid-template-rows: 1.5rem 4.5rem 4rem auto 4.5rem;
     grid-template-areas: "dr dr" "hd hd" "sd sd" "main main" "ft ft"; }
 
-  .dr li {
-    padding: 0; }
-    .dr li a {
-      font-size: 0.7rem; }
+  .dr {
+    justify-items: center; }
+    .dr li {
+      padding: 0; }
+      .dr li a {
+        font-size: 0.7rem; }
 
-  header .header-menu1,
-  header .header-menu2,
-  header .header-menu3 {
-    font-size: 1.5rem; }
+  header {
+    align-items: center; }
+    header .header-menu1,
+    header .header-menu2,
+    header .header-menu3 {
+      font-size: 1.5rem; }
 
   .sub-dr li {
     list-style: none;
@@ -195,10 +199,9 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     position: absolute;
-    top: 14px;
+    top: 3px;
     left: 15%;
-    right: 20%;
-    text-align: center; }
+    right: 20%; }
 
   main h1 {
     text-align: center;
