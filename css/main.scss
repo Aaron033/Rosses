@@ -76,34 +76,33 @@ header{
     background-color:rgba(134, 178, 194,0.4); 
     display: grid;
     grid:{
-        template-columns: 1fr 1fr;
-        template-areas: "menu1 menu2";
+        template-columns: 1fr 1fr 1fr;
+        template-areas: "menu1 menu2 menu3";
         area: hd; 
     }   
 }
 
 .menu1{
-  list-style: map-get($padding-list-style, list-style);
-    padding:map-get($padding-list-style, padding); 
-    text-align:right;
+@include main-header-style();
     grid-area: menu1; 
 
 }
 
 .menu2{
-    list-style: map-get($padding-list-style, list-style);
-    padding:map-get($padding-list-style, padding); 
-    text-align:left;
+   @include main-header-style();
        grid-area:menu2;
 
 }
 
+.menu3{
+    @include main-header-style();
+    grid-area: menu3;
+}
+
 .header-menu1,
-.header-menu2{
-    text-decoration: none;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 700;
+.header-menu2,
+.header-menu3 {
+   @include header-a-style();
 }
 
 
@@ -282,7 +281,14 @@ grid-area: ft;
         }
     }
    //dr *************************************  
-    
+// Header ************************
+    header{
+        .header-menu1,
+.header-menu2,
+        .header-menu3 {
+            font-size:  1.5rem;
+        }
+    }
 //aside *************************************
    
    .sub-dr li{

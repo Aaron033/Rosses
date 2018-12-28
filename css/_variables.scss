@@ -1,3 +1,17 @@
+@mixin main-header-style(){
+    list-style: map-get($padding-list-style, list-style);
+    padding:map-get($padding-list-style, padding); 
+    text-align:center;
+}
+
+@mixin header-a-style(){
+     text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+    
+}
 $fontsize-br: 0.8rem; 
 $padding-list-style:(padding: 10px, list-style: none, margin:0); 
 $padding-drs-full: 5px; 
@@ -5,3 +19,4 @@ $padding-drs-full: 5px;
 $image-shadow: 10px 10px 5px grey; 
 $text-decoration: none;
 $margin-main: 10px;
+

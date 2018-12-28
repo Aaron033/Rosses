@@ -45,24 +45,31 @@ body {
 header {
   background-color: rgba(134, 178, 194, 0.4);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "menu1 menu2";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "menu1 menu2 menu3";
   grid-area: hd; }
 
 .menu1 {
   list-style: none;
   padding: 10px;
-  text-align: right;
+  text-align: center;
   grid-area: menu1; }
 
 .menu2 {
   list-style: none;
   padding: 10px;
-  text-align: left;
+  text-align: center;
   grid-area: menu2; }
 
+.menu3 {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  grid-area: menu3; }
+
 .header-menu1,
-.header-menu2 {
+.header-menu2,
+.header-menu3 {
   text-decoration: none;
   font-size: 2rem;
   text-transform: uppercase;
@@ -160,6 +167,11 @@ footer {
     padding: 0; }
     .dr li a {
       font-size: 0.7rem; }
+
+  header .header-menu1,
+  header .header-menu2,
+  header .header-menu3 {
+    font-size: 1.5rem; }
 
   .sub-dr li {
     list-style: none;
