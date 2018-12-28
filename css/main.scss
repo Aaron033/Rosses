@@ -115,7 +115,7 @@ aside{
         list-style: map-get($padding-list-style, list-style);
           padding:map-get($padding-list-style, padding); 
         a{
-           text-decoration: none; 
+           text-decoration: $text-decoration; 
             
         }
     }
@@ -127,7 +127,7 @@ main{
     grid-area: main; 
     h1{
         
-        margin: 10px;
+        margin: $margin-main;
          }
     
         .container-flowers{
@@ -136,7 +136,7 @@ main{
             text-align: center;
             
             li{
-                list-style: none;
+                list-style:map-get($padding-list-style,list-style);
             }
             grid:{
                template-columns: repeat(3, 1fr); 
@@ -197,6 +197,29 @@ grid-area: ft;
             text-align: center; 
            
         }
+         .footer1{
+            display: grid; 
+            grid:{
+                template-columns: repeat(3, 1fr); 
+                template-rows: auto auto; 
+                template-areas: "fhd fhd fhd"
+                                 "sm1 sm2 sm3";
+            }
+            
+            .fhd{
+                grid-area: fhd; 
+            }
+            .sm1{
+                grid-area: sm1; 
+            }
+            .sm2{
+                grid-area: sm2; 
+                
+            }
+            .sm3{
+                grid-area: sm3; 
+            }
+        }
         .footer2{
             grid-area:ft2; 
              text-align: center; 
@@ -248,7 +271,7 @@ grid-area: ft;
     }
 .sub-aside{
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
     position: absolute;
     top: 14px;
     
@@ -295,10 +318,11 @@ left:15%;
                 
             }
             p{
-                margin: 0px; 
+                margin: map-get($padding-list-style, margin); 
             }
         }
         
+
     }
 }
 

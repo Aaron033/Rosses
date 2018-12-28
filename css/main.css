@@ -114,6 +114,19 @@ footer {
     footer .footer-main .footer1 {
       grid-area: ft1;
       text-align: center; }
+    footer .footer-main .footer1 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas: "fhd fhd fhd" "sm1 sm2 sm3"; }
+      footer .footer-main .footer1 .fhd {
+        grid-area: fhd; }
+      footer .footer-main .footer1 .sm1 {
+        grid-area: sm1; }
+      footer .footer-main .footer1 .sm2 {
+        grid-area: sm2; }
+      footer .footer-main .footer1 .sm3 {
+        grid-area: sm3; }
     footer .footer-main .footer2 {
       grid-area: ft2;
       text-align: center; }
@@ -141,7 +154,7 @@ footer {
 
   .sub-aside {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     position: absolute;
     top: 14px;
     left: 15%;
@@ -164,6 +177,6 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas: "ft1" "ft2" "ft3"; }
     footer .footer-main p {
-      margin: 0px; } }
+      margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */
