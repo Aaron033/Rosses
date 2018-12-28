@@ -128,19 +128,22 @@ main{
     h1{
         margin: 10px;
          }
+    
         .container-flowers{
-            padding:10px;
+               margin:10px;
             display: grid;
             
             grid:{
                template-columns: repeat(3, 1fr); 
-               template-rows: auto auto;
+               
                 template-areas: "img1 img2 img3 "
                                 "img4 img5 img6";
-                 gap: 5px;  
+                gap:10px;
+               
             }
             .img-container1{
                 grid-area: "img1;"; 
+               
             }
             
             .img-container2{
@@ -160,6 +163,11 @@ main{
                 grid:"img6"; 
                 
             } 
+            
+            img{
+             width:100%;
+                
+            }
             
         }
       

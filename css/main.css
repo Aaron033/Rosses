@@ -80,12 +80,11 @@ main {
   main h1 {
     margin: 10px; }
   main .container-flowers {
-    padding: 10px;
+    margin: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
     grid-template-areas: "img1 img2 img3 " "img4 img5 img6";
-    grid-gap: 5px; }
+    grid-gap: 10px; }
     main .container-flowers .img-container1 {
       grid-area: "img1;"; }
     main .container-flowers .img-container2 {
@@ -98,6 +97,8 @@ main {
       grid-area: "img5"; }
     main .container-flowers .img-container6 {
       grid: "img6"; }
+    main .container-flowers img {
+      width: 100%; }
 
 footer {
   background-color: rgba(255, 239, 213, 0.4);
