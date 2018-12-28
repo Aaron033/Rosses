@@ -127,10 +127,7 @@ footer {
     footer .footer-main .footer1 {
       grid-area: ft1;
       text-align: center; }
-      footer .footer-main .footer1 img {
-        width: 20px;
-        height: 20px; }
-      footer .footer-main .footer1 .facebook-icon {
+      footer .footer-main .footer1 .facebook-icon, footer .footer-main .footer1 .twitter, footer .footer-main .footer1 .envelope {
         width: 20px;
         height: 20px;
         fill: white; }
