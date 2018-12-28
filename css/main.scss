@@ -126,19 +126,24 @@ main{
     background-color:rgba( 221, 160, 221, 0.4); 
     grid-area: main; 
     h1{
+        
         margin: 10px;
          }
     
         .container-flowers{
-               margin:10px;
+               margin:15px;
             display: grid;
+            text-align: center;
             
+            li{
+                list-style: none;
+            }
             grid:{
                template-columns: repeat(3, 1fr); 
                
                 template-areas: "img1 img2 img3 "
                                 "img4 img5 img6";
-                gap:10px;
+                gap:15px;
                
             }
             .img-container1{
@@ -166,6 +171,7 @@ main{
             
             img{
              width:100%;
+                box-shadow: $image-shadow;
                 
             }
             

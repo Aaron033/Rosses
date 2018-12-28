@@ -80,11 +80,14 @@ main {
   main h1 {
     margin: 10px; }
   main .container-flowers {
-    margin: 10px;
+    margin: 15px;
     display: grid;
+    text-align: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "img1 img2 img3 " "img4 img5 img6";
-    grid-gap: 10px; }
+    grid-gap: 15px; }
+    main .container-flowers li {
+      list-style: none; }
     main .container-flowers .img-container1 {
       grid-area: "img1;"; }
     main .container-flowers .img-container2 {
@@ -98,7 +101,8 @@ main {
     main .container-flowers .img-container6 {
       grid: "img6"; }
     main .container-flowers img {
-      width: 100%; }
+      width: 100%;
+      box-shadow: 10px 10px 5px grey; }
 
 footer {
   background-color: rgba(255, 239, 213, 0.4);
