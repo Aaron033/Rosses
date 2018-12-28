@@ -194,14 +194,16 @@ grid-area: ft;
         
         .footer1{
             grid-area:ft1;
+            text-align: center; 
            
         }
         .footer2{
             grid-area:ft2; 
-            
+             text-align: center; 
         }
         .footer3{
             grid-area:ft3;
+             text-align: center; 
         }
     }
 }
@@ -278,6 +280,25 @@ left:15%;
                 width:300px;
             }
         }
+    }
+    
+      //asid******************************************
+    
+    footer{
+        .footer-main{
+            display: grid; 
+            grid:{
+                template-columns: 1fr; 
+                template-areas:"ft1"
+                               "ft2"
+                               "ft3";
+                
+            }
+            p{
+                margin: 0px; 
+            }
+        }
+        
     }
 }
 

@@ -112,11 +112,14 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "ft1 ft2 ft3"; }
     footer .footer-main .footer1 {
-      grid-area: ft1; }
+      grid-area: ft1;
+      text-align: center; }
     footer .footer-main .footer2 {
-      grid-area: ft2; }
+      grid-area: ft2;
+      text-align: center; }
     footer .footer-main .footer3 {
-      grid-area: ft3; }
+      grid-area: ft3;
+      text-align: center; }
 
 @media (max-width: 40rem) {
   body {
@@ -154,6 +157,13 @@ footer {
     grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
     width: 300px; }
     main .container-flowers img {
-      width: 300px; } }
+      width: 300px; }
+
+  footer .footer-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "ft1" "ft2" "ft3"; }
+    footer .footer-main p {
+      margin: 0px; } }
 
 /*# sourceMappingURL=main.css.map */
