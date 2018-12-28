@@ -4,6 +4,16 @@
 html {
   height: 100%; }
 
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); }
+
 body {
   margin: 0;
   height: 100%;
