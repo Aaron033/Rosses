@@ -131,8 +131,7 @@ aside{
     background-color: rgba(222,239,247,0.6); 
     grid-area: sd;  
 }
-.sub-aside {
-        
+
     li{
    
         list-style: map-get($padding-list-style, list-style);
@@ -142,7 +141,7 @@ aside{
             
         }
     }
-}
+
 // **********************************************************
 //main code
 main{
@@ -341,6 +340,12 @@ left:15%;
 //    justify-items: center;
 //    align-items: center;
 text-align: center;
+
+    }
+    
+    .north-america, .central-america, .south-america {
+        display: none;
+    
     }
   //aside ******************************************
     

@@ -97,10 +97,10 @@ aside {
   background-color: rgba(222, 239, 247, 0.6);
   grid-area: sd; }
 
-.sub-aside li {
+li {
   list-style: none;
   padding: 10px; }
-  .sub-aside li a {
+  li a {
     text-decoration: none; }
 
 main {
@@ -212,6 +212,9 @@ footer {
     left: 15%;
     right: 20%;
     text-align: center; }
+
+  .north-america, .central-america, .south-america {
+    display: none; }
 
   main h1 {
     text-align: center;
