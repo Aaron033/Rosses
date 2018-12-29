@@ -104,7 +104,8 @@ li {
   list-style: none;
   padding: 10px; }
   li a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #1a1500; }
 
 main {
   background-color: rgba(174, 198, 207, 0.5);
@@ -213,8 +214,7 @@ footer {
     position: absolute;
     top: 3px;
     left: 0;
-    right: 0;
-    text-align: center; }
+    right: 0; }
 
   .north-america, .central-america, .south-america {
     display: none; }

@@ -142,7 +142,8 @@ aside{
         list-style: map-get($padding-list-style, list-style);
           padding:map-get($padding-list-style, padding); 
         a{
-           text-decoration: $text-decoration; 
+           text-decoration: $text-decoration;
+            color:rgb(26, 21, 0);
             
         }
     }
@@ -344,7 +345,7 @@ left:0;
     right:0;
 //    justify-items: center;
 //    align-items: center;
-text-align: center;
+//text-align: center;
 
     }
     
