@@ -96,6 +96,9 @@ header {
 aside {
   background-color: rgba(222, 239, 247, 0.6);
   grid-area: sd; }
+  aside .north-america, aside .central-america, aside .south-america {
+    height: 150px;
+    width: 150px; }
 
 li {
   list-style: none;

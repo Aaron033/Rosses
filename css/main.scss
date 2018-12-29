@@ -129,7 +129,12 @@ header{
 //aside code
 aside{
     background-color: rgba(222,239,247,0.6); 
-    grid-area: sd;  
+    grid-area: sd;
+      .north-america, .central-america, .south-america {
+       height: 150px;
+          width:150px;
+    
+    }
 }
 
     li{
