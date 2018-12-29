@@ -209,8 +209,8 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     position: absolute;
     top: 3px;
-    left: 15%;
-    right: 20%;
+    left: 10%;
+    right: 15%;
     text-align: center; }
 
   .north-america, .central-america, .south-america {
