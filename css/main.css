@@ -65,7 +65,9 @@ header {
   display: none;
   position: absolute;
   vertical-align: middle;
-  left: 10px; }
+  left: 10px;
+  width: 40px;
+  height: 40px; }
 
 .menu1 {
   list-style: none;

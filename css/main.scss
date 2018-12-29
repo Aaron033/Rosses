@@ -96,10 +96,12 @@ header{
     position: relative;
 }
 .menu-ham{
-    display: none;
+   display: none;
     position: absolute;
     vertical-align: middle;
     left:10px;
+    width:40px; 
+    height:40px; 
 }
 .menu1{
 @include main-header-style();
