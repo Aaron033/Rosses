@@ -50,7 +50,7 @@ body {
     .dr .sub-dr .dr1 a, .dr .sub-dr .dr2 a, .dr .sub-dr .dr3 a {
       text-decoration: none;
       font-weight: 700;
-      color: #FFF; }
+      color: #fff; }
 
 header {
   background-color: rgba(134, 178, 194, 0.4);
@@ -186,6 +186,21 @@ footer {
   body {
     grid-template-rows: 1.5rem 4.5rem 4rem auto 4.5rem;
     grid-template-areas: "dr dr" "hd hd" "sd sd" "main main" "ft ft"; }
+
+  .backdrop {
+    display: block;
+    height: 100%; }
+    .backdrop .backdrop-navigation {
+      width: 60%;
+      height: 100%;
+      background-color: #fff; }
+      .backdrop .backdrop-navigation .ul-nav {
+        margin: 0;
+        padding-left: 0 !important; }
+        .backdrop .backdrop-navigation .ul-nav .menu1-mobile, .backdrop .backdrop-navigation .ul-nav .menu2-mobile, .backdrop .backdrop-navigation .ul-nav .menu3-mobile {
+          text-align: center; }
+        .backdrop .backdrop-navigation .ul-nav .menu1-mobile:hover, .backdrop .backdrop-navigation .ul-nav .menu2-mobile:hover, .backdrop .backdrop-navigation .ul-nav .menu3-mobile:hover {
+          background-color: burlywood; }
 
   .dr {
     justify-items: center; }

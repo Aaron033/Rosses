@@ -9,7 +9,7 @@ html{
 }
 
 // backdrop ***************
-.backdrop{
+.backdrop {
     position: fixed;
     display:none;
     top:0; 
@@ -18,6 +18,7 @@ html{
     width:100vw; 
     height: 100vh; 
     background-color: rgba(0, 0, 0,0.5);
+    
     
 }
 // **********************************************************
@@ -76,7 +77,7 @@ body{
         .dr1 a, .dr2 a, .dr3 a{
     text-decoration: none;
        font-weight: 700; 
-    color:#FFF;
+    color:#fff;
 }    
     }
 }
@@ -294,6 +295,32 @@ grid-area: ft;
                           "main main"
                            "ft ft";   
 }
+    
+  // Backdrop ********  
+    .backdrop {
+        display: block;
+        height: 100%; 
+    .backdrop-navigation {
+        width:60%;
+     height: 100%;
+        background-color: #fff;
+        .ul-nav {
+              margin: 0;
+            padding-left:0 !important;
+            .menu1-mobile, .menu2-mobile,  .menu3-mobile{
+                text-align: center;
+                
+               
+            }.menu1-mobile:hover, .menu2-mobile:hover,  .menu3-mobile:hover {
+                background-color:burlywood;
+               
+            }
+            
+        }
+    }
+        
+     }
+    
     //dr *************************************
     .dr{
         justify-items: center;
