@@ -4,16 +4,6 @@
 html {
   height: 100%; }
 
-.backdrop {
-  position: fixed;
-  display: none;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); }
-
 body {
   margin: 0;
   height: 100%;
@@ -60,14 +50,6 @@ header {
   grid-area: hd;
   align-items: center;
   position: relative; }
-
-.menu-ham {
-  display: none;
-  position: absolute;
-  vertical-align: middle;
-  left: 10px;
-  width: 40px;
-  height: 40px; }
 
 .menu1 {
   list-style: none;
@@ -188,9 +170,10 @@ footer {
     grid-template-areas: "dr dr" "hd hd" "sd sd" "main main" "ft ft"; }
 
   .backdrop {
-    display: block;
+    visibility: hidden;
     height: 100%; }
     .backdrop .backdrop-navigation {
+      display: none;
       width: 60%;
       height: 100%;
       background-color: #fff; }
@@ -212,10 +195,7 @@ footer {
   header .header-menu1,
   header .header-menu2,
   header .header-menu3 {
-    font-size: 1.5rem;
-    display: none; }
-  header .menu-ham {
-    display: block; }
+    font-size: 1.5rem; }
 
   .sub-dr li {
     list-style: none;

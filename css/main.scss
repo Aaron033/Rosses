@@ -8,19 +8,7 @@ html{
     
 }
 
-// backdrop ***************
-.backdrop {
-    position: fixed;
-    display:none;
-    top:0; 
-    left: 0; 
-    z-index:2; 
-    width:100vw; 
-    height: 100vh; 
-    background-color: rgba(0, 0, 0,0.5);
-    
-    
-}
+
 // **********************************************************
 //body code
 body{
@@ -96,14 +84,7 @@ header{
      align-items: center;
     position: relative;
 }
-.menu-ham{
-   display: none;
-    position: absolute;
-    vertical-align: middle;
-    left:10px;
-    width:40px; 
-    height:40px; 
-}
+
 .menu1{
 @include main-header-style();
     grid-area: menu1; 
@@ -126,6 +107,7 @@ header{
 .header-menu3 {
    @include header-a-style();
 }
+
 
 
 // **********************************************************
@@ -298,9 +280,10 @@ grid-area: ft;
     
   // Backdrop ********  
     .backdrop {
-        display: block;
+       visibility: hidden;
         height: 100%; 
     .backdrop-navigation {
+        display: none;
         width:60%;
      height: 100%;
         background-color: #fff;
@@ -344,11 +327,9 @@ grid-area: ft;
 .header-menu2,
         .header-menu3 {
             font-size:  1.5rem;
-            display: none;
+       
         }
-        .menu-ham{
-            display: block;
-        }
+    
         
     }
 //aside *************************************
