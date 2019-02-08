@@ -164,6 +164,11 @@ main{
                 gap:15px;
                
             }
+            .container-flowers{
+                div:first-of-type{
+                    @include img-container-info();
+                }
+            }
             .img-container1{
                 grid-area: "img1;"; 
                
