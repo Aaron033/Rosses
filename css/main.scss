@@ -168,7 +168,10 @@ main{
           
                      p{
                     @include img-container-info();
-            
+                }
+                
+                li{
+                    padding: 5px;
                 }
                
             }
