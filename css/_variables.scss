@@ -20,3 +20,11 @@ $image-shadow: 10px 10px 5px grey;
 $text-decoration: none;
 $margin-main: 10px;
 
+@mixin img-container-info(){
+    p{
+        margin-bottom: 0;
+    }
+    li{
+        padding: 0;
+    }
+}
