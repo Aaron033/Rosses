@@ -109,7 +109,7 @@ main {
     grid-gap: 15px; }
     main .container-flowers li {
       list-style: none; }
-    main .container-flowers .container-flowers div p {
+    main .container-flowers .img-container1 p, main .container-flowers .img-container2 p, main .container-flowers .img-container3 p, main .container-flowers .img-container4 p, main .container-flowers .img-container5 p, main .container-flowers .img-container6 p {
       margin-bottom: 0; }
     main .container-flowers .img-container1 {
       grid-area: "img1;"; }
