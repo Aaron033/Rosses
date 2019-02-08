@@ -58,7 +58,8 @@ header {
   grid-area: menu1; }
 
 .menu1:hover a, .menu2:hover a, .menu3:hover a {
-  color: grey; }
+  color: grey;
+  text-shadow: 2px 2px 8px lightgrey; }
 
 .menu2 {
   list-style: none;
