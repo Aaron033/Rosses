@@ -57,6 +57,9 @@ header {
   text-align: center;
   grid-area: menu1; }
 
+.menu1:hover a, .menu2:hover a, .menu3:hover a {
+  color: grey; }
+
 .menu2 {
   list-style: none;
   padding: 10px;
@@ -101,7 +104,7 @@ main {
     display: grid;
     text-align: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "img1 img2 img3 " "img4 img5 img6";
+    grid-template-areas: "img1 img2 img3" "img4 img5 img6";
     grid-gap: 15px; }
     main .container-flowers li {
       list-style: none; }

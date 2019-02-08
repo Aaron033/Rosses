@@ -90,7 +90,11 @@ header{
     grid-area: menu1; 
 
 }
-
+.menu1:hover,.menu2:hover ,.menu3:hover {
+    a {
+        color: grey; 
+    }
+} 
 .menu2{
    @include main-header-style();
        grid-area:menu2;
@@ -154,7 +158,7 @@ main{
             grid:{
                template-columns: repeat(3, 1fr); 
                
-                template-areas: "img1 img2 img3 "
+                template-areas: "img1 img2 img3"
                                 "img4 img5 img6";
                 gap:15px;
                
