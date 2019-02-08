@@ -109,10 +109,8 @@ main {
     grid-gap: 15px; }
     main .container-flowers li {
       list-style: none; }
-    main .container-flowers .container-flowers div:first-of-type p {
+    main .container-flowers .container-flowers p {
       margin-bottom: 0; }
-    main .container-flowers .container-flowers div:first-of-type li {
-      padding: 0; }
     main .container-flowers .img-container1 {
       grid-area: "img1;"; }
     main .container-flowers .img-container2 {

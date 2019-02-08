@@ -165,7 +165,7 @@ main{
                
             }
             .container-flowers{
-                div:first-of-type{
+                p{
                     @include img-container-info();
                 }
             }
