@@ -165,9 +165,12 @@ main{
                
             }
             .container-flowers{
-                p{
+                div{
+                     p{
                     @include img-container-info();
                 }
+                }
+               
             }
             .img-container1{
                 grid-area: "img1;"; 
