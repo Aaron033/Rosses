@@ -74,7 +74,7 @@ body{
 //Header code 
 
 header{
-    background-color:rgb(0,255,127); 
+    background-color:rgba(0,255,127,0.4); 
     display: grid;
     grid:{
         template-columns: 1fr 1fr 1fr;
@@ -141,7 +141,7 @@ aside{
 // **********************************************************
 //main code
 main{
-    background-color:rgba(174,198,207, 0.5); 
+    background-color:rgba(0,255,127,0.4); 
     grid-area: main; 
     h1{
         

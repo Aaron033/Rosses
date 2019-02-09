@@ -43,7 +43,7 @@ body {
       color: #fff; }
 
 header {
-  background-color: springgreen;
+  background-color: rgba(0, 255, 127, 0.4);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "menu1 menu2 menu3";
@@ -96,7 +96,7 @@ li {
     color: #1a1500; }
 
 main {
-  background-color: rgba(174, 198, 207, 0.5);
+  background-color: rgba(0, 255, 127, 0.4);
   grid-area: main; }
   main h1 {
     margin: 10px; }
