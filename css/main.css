@@ -82,7 +82,7 @@ header {
   font-weight: 700; }
 
 aside {
-  background-color: rgba(222, 239, 247, 0.6);
+  background-color: rgba(0, 255, 127, 0.2);
   grid-area: sd; }
   aside .north-america, aside .central-america, aside .south-america {
     height: 150px;
