@@ -17,7 +17,7 @@ body {
   display: grid;
   grid-area: dr;
   justify-items: end;
-  background-color: #94a8b0; }
+  background-color: limegreen; }
   .dr .sub-dr {
     display: grid;
     grid-template-areas: "dr1 dr2 dr3";
@@ -43,7 +43,7 @@ body {
       color: #fff; }
 
 header {
-  background-color: rgba(134, 178, 194, 0.4);
+  background-color: springgreen;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "menu1 menu2 menu3";

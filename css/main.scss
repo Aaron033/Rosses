@@ -32,7 +32,7 @@ body{
     display: grid; 
   grid-area: dr;
    justify-items: end;
-    background-color: rgb(148, 168, 176); 
+    background-color: rgb(50,205,50); 
     
    
     .sub-dr{
@@ -74,7 +74,7 @@ body{
 //Header code 
 
 header{
-    background-color:rgba(134, 178, 194,0.4); 
+    background-color:rgb(0,255,127); 
     display: grid;
     grid:{
         template-columns: 1fr 1fr 1fr;
