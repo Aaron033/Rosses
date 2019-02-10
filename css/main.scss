@@ -212,9 +212,10 @@ main{
 // **********************************************************
 //footer code
 footer{
-    background-color:rgba(36, 38, 59,0.8); 
+    background-color:rgba(50,205,50,0.5); 
 grid-area: ft;
-    color:#fff;
+    color:#000;
+    font-weight: 800;
     font-size: .8rem;
     @media (min-width: 41rem){
            padding-top:10px;
@@ -369,6 +370,7 @@ grid-area: ft;
     top: 3px;
     left:0;
     right:0;
+  
     }
     
     .north-america, .central-america, .south-america {
