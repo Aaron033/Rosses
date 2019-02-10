@@ -353,7 +353,7 @@ grid-area: ft;
    
    .sub-dr li{
    list-style: map-get($padding-list-style, list-style);
-    padding:map-get($padding-list-style, padding); 
+//    padding:map-get($padding-list-style, padding); 
     text-align: center;
 
 }
@@ -370,8 +370,6 @@ grid-area: ft;
     
     left:0;
     right:0;
-
-
     }
     
     .north-america, .central-america, .south-america {
