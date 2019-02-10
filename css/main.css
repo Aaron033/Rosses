@@ -206,7 +206,6 @@ footer {
     font-size: 1.5rem; }
 
   .sub-dr li {
-    list-style: none;
     text-align: center; }
 
   aside {
@@ -215,7 +214,6 @@ footer {
   .sub-aside {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    position: absolute;
     top: 3px;
     left: 0;
     right: 0; }

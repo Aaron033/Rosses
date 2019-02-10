@@ -352,8 +352,8 @@ grid-area: ft;
 //aside *************************************
    
    .sub-dr li{
-   list-style: map-get($padding-list-style, list-style);
-//    padding:map-get($padding-list-style, padding); 
+//   list-style: map-get($padding-list-style, list-style);
+    
     text-align: center;
 
 }
@@ -365,9 +365,8 @@ grid-area: ft;
 .sub-aside{
     display: grid; 
     grid-template-columns: repeat(3,1fr);
-    position: absolute;
+//    position: absolute;
     top: 3px;
-    
     left:0;
     right:0;
     }
